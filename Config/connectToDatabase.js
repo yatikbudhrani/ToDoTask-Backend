@@ -1,9 +1,10 @@
+import mongoose from "mongoose";
 import { set, connect } from "mongoose";
 import dotenv from "dotenv";
 
 dotenv.config();
 
-const connectionString = process.env.DB_STRING;
+const connectionString = process.env.MONGO_URI;
 
 /**
  * Connects to the MongoDB database using the provided connection string.
